@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AMCA,AAAA,IAAI,AAAC,CACD,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,4CAA4C,CAC3D",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_mixins.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_navigation.scss",
+        "../sass/pages/_home.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
