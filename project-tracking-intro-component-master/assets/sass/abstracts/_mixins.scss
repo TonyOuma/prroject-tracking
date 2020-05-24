@@ -11,3 +11,61 @@
 @mixin font-w400 {
     font-weight: 400;
 }
+
+// Sass mixin
+$font-weights: (300, 400);
+@each $weight in $font-weights {
+    .f-#{$weight} {
+        font-weight: #{$weight};
+    }
+}
+
+@mixin font18 {
+    font-size: 18px !important;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+// media-queries
+// small only
+@mixin small-only {
+    @media screen and (max-width: 39.9375em) {
+        @content;
+    }
+}
+
+// Medium and up
+@mixin medium-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// Medium only
+@mixin medium-only {
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        @content;
+    }
+}
+
+// Large and up
+@mixin medium-up {
+    @media screen and (min-width: 64em) {
+        @content;
+    }
+}
+
+// Large only
+@mixin medium-up {
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
