@@ -1,7 +1,5 @@
 body {
-    // @include font18;
-    // color: $secondary-light-gray !important;
-    // color: #F3F4F6;
+    font-family: 'Barlow', sans-serif;
 }
 
 main {
@@ -14,7 +12,7 @@ main {
 .home {
     // background: $secondary-light-gray;
     overflow: hidden;
-    margin-right: -60vw;
+    margin-right: -50vw;
     padding-left: 7vw;
     // z-index: 20;
     p {
@@ -22,29 +20,52 @@ main {
         // color: $gray-blue;
     }
     &-left {
+        p {
+            color: $gray-blue;
+            span {
+                color: $light-gray-blue;
+                display: inline-block;
+                padding: .3rem 1.0rem;
+                border-radius: 50px;
+                margin-right: 0.5vw;
+                background: $dark-blue;
+                font-weight: 500;
+            }
+        }
+        .container {
+            margin-top: 10vh;
+            display: flex;
+            p {
+                font-size: 18px;
+                margin: 0.5rem 0;
+                color: $gray-blue;
+                // align-self: m;
+            }
+            .primary-button {
+                display: inline-block;
+                padding: .5rem 1.0rem;
+                border-radius: 5px;
+                margin-right: 2vw;
+                background: $primary-red;
+                font-weight: 500;
+                a {
+                    color: $light-gray-blue;
+                }
+            }
+        }
         margin-top: 5vh;
         align-items: center;
         // width: 20% !important;
         // padding: 40vh 0;
         h1 {
+            padding: 2vh 0;
             line-height: 1.1;
             font-weight: 700;
             // width: 50%;
         }
     }
     &-right {
-        background: url("../../images/bg-intro-desktop.svg") !important;
-    }
-}
-
-.primary-button {
-    display: inline-block;
-    padding: .5rem 1.5rem;
-    border-radius: 50px;
-    // background: linear-gradient(225deg, $bright-cyan, $lime-green);
-    font-weight: 500;
-    a {
-        // color: $white;
+        // background: url("../../images/bg-intro-desktop.svg") !important;
     }
 }
 

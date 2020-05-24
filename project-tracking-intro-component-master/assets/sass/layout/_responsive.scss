@@ -1,14 +1,12 @@
     @include media-sm {
         .menu-btn {
             visibility: hidden;
-            // width: 80% !important;
-            // &__burger {
-            //     top: 1.9rem !important;
-            // }
         }
         .nav {
+            float: right;
             visibility: visible;
             .menu-nav {
+                // align-items: right !important;
                 display: block;
                 transform: translateY(0);
                 height: 100%;
@@ -19,10 +17,13 @@
                     padding-right: 1.5rem;
                 }
                 &__link {
-                    font-size: 1.5rem;
+                    // font-size: 1.5rem;
+                }
+                .login {
+                    padding-left: 3vw;
+                    color: $gray-blue;
                 }
             }
-            // }
         }
     }
     
@@ -30,10 +31,22 @@
         main {
             padding-top: 0vh !important;
         }
+        .nav {
+            .menu-nav {
+                &__item {
+                    //  display: inline;
+                    padding-right: 0 !important;
+                }
+                .login-border {
+                    width: 100%;
+                    border-top: 2px solid $light-gray-blue;
+                }
+            }
+        }
         .home {
             margin-right: -60vw !important;
             padding-left: 0 !important;
-            z-index: 20;
+            // z-index: 20;
             padding-top: 20vh !important;
             p {
                 font-size: 13.84px;
@@ -43,18 +56,27 @@
                 // align-items: center;
                 padding: 10vh 7vw !important;
                 // width: 70% !important;
-                margin-top: 25vh !important;
+                margin-top: 35vh !important;
                 h1 {
                     //    line-height: 1.1;
                     width: 50% !important;
                 }
+                .primary-button {
+                    padding: .2rem .8rem !important;
+                    a {
+                        font-size: 15px;
+                    }
+                }
                 .container {
-                    display: flex;
+                    margin-top: 6vh !important;
+                    p {
+                        font-size: 15px !important;
+                    }
                 }
             }
             &-right {
                 margin-right: -60vw !important;
-                margin-top: -85vh !important;
+                margin-top: -97vh !important;
                 // padding-right: -20vw;
                 // background: url("../../images/bg-intro-desktop.svg") !important;
             }
