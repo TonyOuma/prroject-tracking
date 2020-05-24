@@ -1,0 +1,26 @@
+@include media-sm {
+    .menu-btn {
+        visibility: hidden;
+        // width: 80% !important;
+        // &__burger {
+        //     top: 1.9rem !important;
+        // }
+    }
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
